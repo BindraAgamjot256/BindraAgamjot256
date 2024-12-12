@@ -1,13 +1,10 @@
 - 👋 Hi, I’m @BindraAgamjot256
-- 👀 I’m interested in Javasicript and Python for AI
-- 🌱 I’m currently learning React, React Native and French
-- 💞️ I’m looking to collaborate on Like Nothing... :) no offence...
-- 📫 How to reach me: just don't...
+- 👀 I’m interested in Typescript, Rust and Python for AI
+- 🌱 I’m currently learning React, Flutter, Rust
+- 💞️ I’m looking to collaborate on finishing my 10th boards...
+- 📫 How to reach me: just don't, as I am studying
 - 😄 Pronouns: He/Him
-- ⚡ Fun fact: Java is SHIT... you can not change my mind
-
-  
-You can email me at ajs.bindra@proton.me but don't...
+- ⚡ Fun fact: just no... :):
 
 <!---
 BindraAgamjot256/BindraAgamjot256 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
