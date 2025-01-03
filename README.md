@@ -13,7 +13,7 @@
   
 ```rust
 fn main() {
-    let about_me = Developer {
+    let about_me = Developer! {
         name: "Agamjot Singh Bindra",
         role: "Full Stack Developer",
         code: vec!["Rust", "JavaScript", "Python"],
