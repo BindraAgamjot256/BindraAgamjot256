@@ -35,10 +35,11 @@ tech_stack = {
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bindraagamjot256&show_icons=true&theme=tokyonight)
+<img align="center" height="170" src="https://github-readme-stats.vercel.app/api?username=BindraAgamjot256&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&hide=issues">
+<img align="center" height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BindraAgamjot256&layout=compact&langs_count=16&theme=dracula"/>
 
 <!-- Snake animation -->
-![Snake animation](https://github.com/bindraagamjot256/bindraagamjot256/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/BindraAgamjot256/BindraAgamjot256/blob/output/github-contribution-grid-snake.svg)
 
 </div>
 
