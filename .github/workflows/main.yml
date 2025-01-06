@@ -2,7 +2,7 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # Runs twice a day
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 jobs:
@@ -13,18 +13,25 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Generate Snake
         uses: Platane/snk@master
         with:
           github_user_name: BindraAgamjot256
-          svg_out_path: dist/github-contribution-grid-snake.svg
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg
+          snake_color: 'blue'
+          gif_out_path: dist/github-contribution-grid-snake.gif
 
       - name: Push to GitHub
         uses: EndBug/add-and-commit@v7
         with:
-          branch: main
+          branch: output
           message: '🐍 Generate Contribution Snake'
-          add: 'dist/github-contribution-grid-snake.svg'
+          add: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg
+            dist/github-contribution-grid-snake.gif
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
