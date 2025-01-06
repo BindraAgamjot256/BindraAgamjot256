@@ -20,7 +20,6 @@ jobs:
           github_user_name: BindraAgamjot256
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
           snake_color: 'blue'
           gif_out_path: dist/github-contribution-grid-snake.gif
 
@@ -31,7 +30,6 @@ jobs:
           message: '🐍 Generate Contribution Snake'
           add: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
             dist/github-contribution-grid-snake.gif
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
