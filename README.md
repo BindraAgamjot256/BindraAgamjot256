@@ -86,16 +86,16 @@ def get_daily_routine():
 <div align="center">
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BindraAgamjot256&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BindraAgamjot256&layout=compact&theme=tokyonight&hide_border=true)
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=BindraAgamjot256&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BindraAgamjot256&layout=compact&theme=tokyonight&hide_border=true)
 </div>
 
+
+## Enjoy yourself with some satisfaction... <img src="https://github.com/user-attachments/assets/ece14649-d40c-4287-b8c5-bef4e856bc9e" width=40px>
 <!-- Light Mode -->
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/BindraAgamjot256/BindraAgamjot256/output/dist/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/BindraAgamjot256/BindraAgamjot256/blob/output/github-contribution-grid-snake.svg">
   <!-- Dark Mode -->
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BindraAgamjot256/BindraAgamjot256/output/dist/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/BindraAgamjot256/BindraAgamjot256/blob/output/github-contribution-grid-snake-dark.svg">
   <img alt="github-snake" src="https://raw.githubusercontent.com/BindraAgamjot256/BindraAgamjot256/output/dist/github-contribution-grid-snake.svg">
 </picture>
-
-
