@@ -99,3 +99,4 @@ def get_daily_routine():
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/BindraAgamjot256/BindraAgamjot256/blob/output/github-contribution-grid-snake-dark.svg">
   <img alt="github-snake" src="https://raw.githubusercontent.com/BindraAgamjot256/BindraAgamjot256/output/dist/github-contribution-grid-snake.svg">
 </picture>
+<!-- It's not just me, is it -->
