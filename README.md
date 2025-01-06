@@ -90,6 +90,12 @@ def get_daily_routine():
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=BindraAgamjot256&theme=tokyonight&hide_border=true)
 </div>
 
-### 🐍 Contribution Snake
-![Snake animation](https://github.com/BindraAgamjot256/BindraAgamjot256/blob/output/github-contribution-grid-snake-dark.svg)
+<!-- Light Mode -->
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/BindraAgamjot256/BindraAgamjot256/output/dist/github-contribution-grid-snake.svg">
+  <!-- Dark Mode -->
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BindraAgamjot256/BindraAgamjot256/output/dist/github-contribution-grid-snake-dark.svg">
+  <img alt="github-snake" src="https://raw.githubusercontent.com/BindraAgamjot256/BindraAgamjot256/output/dist/github-contribution-grid-snake.svg">
+</picture>
+
 
