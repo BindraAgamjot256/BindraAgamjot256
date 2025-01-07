@@ -78,7 +78,7 @@ def get_daily_routine():
     return {
         "coding_hours": "Too many to count 🤓",
         "coffee_cups": "∞",
-        "favorite_editor": "RustRover/Webstorm",
+        "favorite_editor": "RustRover/Webstorm", // ❤️ to school for that
         "current_status": "actually studying for 10th boards"
     }
 ```
@@ -86,7 +86,6 @@ def get_daily_routine():
 <div align="center">
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BindraAgamjot256&show_icons=true&theme=tokyonight&hide_border=true)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=BindraAgamjot256&theme=tokyonight&hide_border=true)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BindraAgamjot256&layout=compact&theme=tokyonight&hide_border=true)
 </div>
 
