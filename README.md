@@ -66,7 +66,7 @@ const currentProject: Project = {
     description: `
         A full fledged OS,
         With own sandboxed programming language,
-        For my portfolio, in a CLI
+        For my portfolio, in a CLI 
     `
 };
 ```
@@ -84,8 +84,9 @@ def get_daily_routine():
 ```
 
 <div align="center">
-
+           
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BindraAgamjot256&show_icons=true&theme=tokyonight&hide_border=true)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=BindraAgamjot256&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BindraAgamjot256&layout=compact&theme=tokyonight&hide_border=true)
 </div>
 
