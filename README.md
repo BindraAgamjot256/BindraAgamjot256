@@ -78,7 +78,7 @@ def get_daily_routine():
     return {
         "coding_hours": "Too many to count 🤓",
         "coffee_cups": "∞",
-        "favorite_editor": "RustRover/Webstorm", // ❤️ to school for that
+        "favorite_editor": "RustRover/Webstorm", # ❤️ to school for that
         "current_status": "actually studying for 10th boards"
     }
 ```
