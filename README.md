@@ -1,32 +1,21 @@
+# Hey there, I’m Agamjot Singh Bindra!  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" alt="Waving Hand">
+
 <div align="center">
-
-```
-
-           _                _          _            _           _           _                   _                   _             _                 _   _              _       _         _        _            _______     _    
-          / /\             /\ \       /\ \     _   /\ \        /\ \        / /\                / /\                /\ \          / /\              /\_\/\_\ _         /\ \    /\ \      /\ \    /\ \          / ___  /\  /\ \   
-         / /  \            \ \ \     /  \ \   /\_\/  \ \____  /  \ \      / /  \              / /  \              /  \ \        / /  \            / / / / //\_\       \ \ \  /  \ \     \_\ \  /  \ \        / /\__\ \ \/  \ \  
-        / / /\ \           /\ \_\   / /\ \ \_/ / / /\ \_____\/ /\ \ \    / / /\ \            / / /\ \            / /\ \_\      / / /\ \          /\ \/ \ \/ / /       /\ \_\/ /\ \ \    /\__ \/ /\ \ \      / / /   \_\/ /\ \_\ 
-       / / /\ \ \         / /\/_/  / / /\ \___/ / / /\/___  / / /\ \_\  / / /\ \ \          / / /\ \ \          / / /\/_/     / / /\ \ \        /  \____\__/ /       / /\/_/ / /\ \ \  / /_ \ \/_/\ \ \    / / /      / / /\/_/ 
-      / / /\ \_\ \       / / /    / / /  \/____/ / /   / / / / /_/ / / / / /  \ \ \        / / /  \ \ \        / / / ______  / / /  \ \ \      / /\/________/       / / / / / /  \ \_\/ / /\ \ \  / / /    \ \ \     / /_/_     
-     / / /\ \ \___\     / / /    / / /    / / / / /   / / / / /__\/ / / / /___/ /\ \      / / /___/ /\ \      / / / /\_____\/ / /___/ /\ \    / / /\/_// / /\ \    / / / / / /   / / / / /  \/_/ / / /      \ \ \   / /___/\    
-    / / /  \ \ \__/    / / /    / / /    / / / / /   / / / / /_____/ / / /_____/ /\ \    / / /_____/ /\ \    / / /  \/____ / / /_____/ /\ \  / / /    / / /\ \_\  / / / / / /   / / / / /       / / /  _     \ \ \ / /\__ \ \   
-   / / /____\_\ \  ___/ / /__  / / /    / / /\ \ \__/ / / / /\ \ \  / /_________/\ \ \  / /_________/\ \ \  / / /_____/ / / /_________/\ \ \/ / /    / / / / / /_/ / / / / /___/ / / / /       / / /_/\_\____/ / // / /__\ \ \  
-  / / /__________\/\__\/_/___\/ / /    / / /  \ \___\/ / / /  \ \ \/ / /_       __\ \_\/ / /_       __\ \_\/ / /______\/ / / /_       __\ \_\/_/    / / / / / /__\/ / / / /____\/ /_/ /       / /_____/ /_____/ // / /____\ \ \ 
-  \/_____________/\/_________/\/_/     \/_/    \/_____/\/_/    \_\/\_\___\     /____/_/\_\___\     /____/_/\/___________/\_\___\     /____/_/       \/_/  \/_______/  \/_________/\_\/        \________/\_____\/ \/__________\/ 
-                                                                                                                                                                                                                                
-
-```
-
+  
 </div>
 
-# Hey there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+I'm a Student Developer on a quest to conquer Systems Programming, Web Development, and AI/ML. When I'm not debugging code or wrestling with assembly, you'll find me caffeinating to infinity ☕️ and crafting digital dreams.
+
+---
+
+## 🚀 Who Am I?
 
 ```rust
 struct Developer {
     name: String,
     role: String,
     current_focus: Vec<String>,
-    last_active: DateTime<Utc>,
+    enthusiasm_level: u8,
 }
 
 impl Developer {
@@ -34,22 +23,33 @@ impl Developer {
         Developer {
             name: String::from("Agamjot Singh Bindra"),
             role: String::from("Student Developer"),
-            current_focus: vec!["Systems Programming", "Web Development", "AI/ML"],
-            last_active: Utc.ymd(2025, 1, 6).and_hms(07, 44, 36),
+            current_focus: vec!["Systems Programming".to_string(), "Web Development".to_string(), "AI/ML".to_string()],
+            enthusiasm_level: 100,
         }
     }
 }
 ```
 
-## 💻 Tech Stack
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+> *“Code is like humor. When you have to explain it, it’s bad.”* – Cory House
 
-## 🌟 Current Project
+---
+
+## 💻 Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white" alt="Rust">
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+  <img src="https://img.shields.io/badge/next.js-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+</p>
+
+I wield these tools to build fast, reliable, and elegant software. But the magic truly happens when they all play nicely together(I'll let you know when that happens...)!
+
+---
+
+## 🌟 Current Adventure: PortfoliOS
 
 ```typescript
 interface Project {
@@ -60,16 +60,20 @@ interface Project {
 }
 
 const currentProject: Project = {
-    name: "[PortfoliOS]",
-    status: "In Development",
+    name: "PortfoliOS",
+    status: "In Development", // I am taking a break
     stack: ["Rust", "Assembly"],
     description: `
-        A full fledged OS,
-        With own sandboxed programming language,
-        For my portfolio, in a CLI 
+        A full-fledged OS,
+        With its own sandboxed programming language,
+        Showcasing my wizardry in a CLI interface
     `
 };
 ```
+
+This isn't just a project—it's a journey to the heart of how computers tick. Expect dragons (bugs), treasure (neat features), and plenty of epic commits!
+
+---
 
 ## 📊 Quick Stats
 
@@ -78,25 +82,38 @@ def get_daily_routine():
     return {
         "coding_hours": "Too many to count 🤓",
         "coffee_cups": "∞",
-        "favorite_editor": "RustRover/Webstorm", # ❤️ to school for that
-        "current_status": "actually studying for 10th boards"
+        "favorite_editor": "RustRover/WebStorm",
+        "current_status": "Surviving School"
     }
 ```
 
-<div align="center">
-           
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BindraAgamjot256&show_icons=true&theme=tokyonight&hide_border=true)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=BindraAgamjot256&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BindraAgamjot256&layout=compact&theme=tokyonight&hide_border=true)
-</div>
+## 📈 GitHub Warrior Stats(Because monkeys love dashboards)
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BindraAgamjot256\&show_icons=true\&theme=tokyonight\&hide_border=true)
+![Streak Stats](https://github-readme-streak-stats.herokuapp.com?user=BindraAgamjot256\&theme=tokyonight\&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BindraAgamjot256\&layout=compact\&theme=tokyonight\&hide_border=true)
+
+---
+
+## 📫 How to Reach Me
+
+* 📨 **Email**: [agamjot@example.com](mailto:ajs.bindra@proton.me)
 
 
-## Enjoy yourself with some satisfaction... <img src="https://github.com/user-attachments/assets/ece14649-d40c-4287-b8c5-bef4e856bc9e" width=40px>
-<!-- Light Mode -->
+Feel free to say hi, collaborate, or share your favorite meme!
+
+---
+
+> **Fun Fact**: I once tried to code an AI that writes README files… ironically, it’s still stuck in infinite loop. 🤖🔄 
+
+---
+
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/BindraAgamjot256/BindraAgamjot256/blob/output/github-contribution-grid-snake.svg">
-  <!-- Dark Mode -->
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/BindraAgamjot256/BindraAgamjot256/blob/output/github-contribution-grid-snake-dark.svg">
-  <img alt="github-snake" src="https://raw.githubusercontent.com/BindraAgamjot256/BindraAgamjot256/output/dist/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/BindraAgamjot256/BindraAgamjot256/blob/bde49589199b6ade2fe89c2fcfaf895a31584a23/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/BindraAgamjot256/BindraAgamjot256/blob/bde49589199b6ade2fe89c2fcfaf895a31584a23/github-contribution-grid-snake-dark.svg">
+  <img alt="Fallback image description" src="https://github.com/BindraAgamjot256/BindraAgamjot256/blob/bde49589199b6ade2fe89c2fcfaf895a31584a23/github-contribution-grid-snake.svg">
 </picture>
-<!-- It's not just me, is it -->
+
+
+
+Thanks for dropping by—let’s build something awesome together! 🚀
