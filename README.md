@@ -97,7 +97,7 @@ def get_daily_routine():
 
 ## 📫 How to Reach Me
 
-* 📨 **Email**: [agamjot@example.com](mailto:ajs.bindra@proton.me)
+* 📨 **Email**: [ajs.bindra@proton.me](mailto:ajs.bindra@proton.me)
 
 
 Feel free to say hi, collaborate, or share your favorite meme!
