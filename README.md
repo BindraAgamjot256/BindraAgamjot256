@@ -49,7 +49,7 @@ I wield these tools to build fast, reliable, and elegant software. But the magic
 
 ---
 
-## 🌟 Current Adventure: PortfoliOS
+## 🌟 Current Adventure: zenos
 
 ```typescript
 interface Project {
@@ -60,16 +60,15 @@ interface Project {
 }
 
 const currentProject: Project = {
-    name: "PortfoliOS",
-    status: "In Development", // I am taking a break
+    name: "zenos",
+    status: "In Development", // I am taking a break from PortfoliOS
     stack: ["Rust", "Assembly"],
     description: `
-        A full-fledged OS,
-        With its own sandboxed programming language,
-        Showcasing my wizardry in a CLI interface
+        A full-fledged OS, with a working userland, and syscalls(a beast I have never tackled up to now)
     `
 };
 ```
+<!-- Hope Zenos works out uwu -->
 
 This isn't just a project—it's a journey to the heart of how computers tick. Expect dragons (bugs), treasure (neat features), and plenty of epic commits!
 
