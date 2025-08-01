@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agamjot Singh Bindra - Terminal Portfolio</title>
+  <style>
+    body {
+      background: #000;
+      color: #00ff00;
+      font-family: monospace;
+      margin: 0;
+      padding: 1rem;
+      overflow-x: hidden;
+    }
+
+    .terminal {
+      max-width: 1000px;
+      margin: 0 auto;
+      white-space: pre-wrap;
+    }
+
+    .line {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .prompt {
+      color: #0f0;
+      margin-right: 0.5rem;
+    }
+
+    input {
+      background: transparent;
+      border: none;
+      color: inherit;
+      font: inherit;
+      outline: none;
+      flex: 1;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal" id="terminal"></div>
+  <script>
+    const terminal = document.getElementById('terminal');
+    let promptStr = localStorage.getItem('promptStr') || 'bindra@portfolio:~$';
+    let currentPath = localStorage.getItem('currentPath') || '~';
+    let history = JSON.parse(localStorage.getItem('history') || '[]');
+    let historyIndex = history.length;
+
+    const projects = {
+      zenos: { desc: "A custom OS written in Assembly and Rust.", link: '[REDACTED]' },
+      portfolios: { desc: "My original ring-0 portfolio OS.", link: 'https://github.com/BindraAgamjot256/portfolios' },
+      science: { desc: "Public website for my school's science society.", link: 'https://bbpsgr-sciencesociety.vercel.app' },
+      decodeme: { desc: "CTF site for teaching cybersecurity.", link: 'https://bbpsgr-cyberclub.github.io/Decode.me' },
+      portfolioweb: { desc: "This site. A terminal-based portfolio.", link: '#' },
+    };
+
+    const socials = {
+      github: 'https://github.com/BindraAgamjot256',
+      email: 'mailto:bindraagamjot256@gmail.com',
+      discord: 'https://discord.com/users/agamjot_bindra'
+    };
+
+    const skills = ["Rust", "OSDev", "Web dev", "Python", "Figma", "Vercel", "React"];
+    const commands = ['help', 'ls', 'projects', 'cat', 'echo', 'skills', 'socials', 'clear', 'sudo', 'color', 'font', 'cd', 'pwd'];
+
+    function printOutput(text = '') {
+      const line = document.createElement('div');
+      line.textContent = text;
+      terminal.appendChild(line);
+      terminal.scrollTop = terminal.scrollHeight;
+    }
+
+    function saveState() {
+      localStorage.setItem('promptStr', promptStr);
+      localStorage.setItem('currentPath', currentPath);
+      localStorage.setItem('history', JSON.stringify(history));
+      localStorage.setItem('terminalHTML', terminal.innerHTML);
+    }
+
+    function createPrompt() {
+      const line = document.createElement('div');
+      line.classList.add('line');
+
+      const prompt = document.createElement('span');
+      prompt.classList.add('prompt');
+      prompt.textContent = `${promptStr} `;
+
+      const input = document.createElement('input');
+      input.autofocus = true;
+
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const command = input.value.trim();
+          history.push(command);
+          historyIndex = history.length;
+          line.removeChild(input);
+          line.textContent = `${promptStr} ${command}`;
+          handleCommand(command);
+          saveState();
+        } else if (e.key === 'ArrowUp') {
+          if (historyIndex > 0) {
+            historyIndex--;
+            input.value = history[historyIndex];
+          }
+        } else if (e.key === 'ArrowDown') {
+          if (historyIndex < history.length - 1) {
+            historyIndex++;
+            input.value = history[historyIndex];
+          } else {
+            input.value = '';
+          }
+        } else if (e.key === 'Tab') {
+          e.preventDefault();
+          const match = commands.find(cmd => cmd.startsWith(input.value));
+          if (match) input.value = match;
+        }
+      });
+
+      line.appendChild(prompt);
+      line.appendChild(input);
+      terminal.appendChild(line);
+      input.focus();
+      terminal.scrollTop = terminal.scrollHeight;
+    }
+
+    function handleCommand(input) {
+      let command = input;
+      if (command.startsWith('sudo ')) {
+        printOutput("Permission denied. Also... why are you like this?");
+        createPrompt();
+        return;
+      }
+
+      const [cmd, ...args] = command.split(' ');
+
+      switch (cmd) {
+        case 'help':
+          printOutput('Available commands: ' + commands.join(', '));
+          break;
+        case 'ls':
+        case 'projects':
+          if (args.length && projects[args[0]]) {
+            const proj = projects[args[0]];
+            printOutput(`${args[0]}: ${proj.desc}`);
+            printOutput(`Link: ${proj.link}`);
+          } else {
+            printOutput(Object.keys(projects).join('  '));
+          }
+          break;
+        case 'cat':
+          if (args.length && projects[args[0]]) {
+            const proj = projects[args[0]];
+            printOutput(`${args[0]}: ${proj.desc}`);
+            printOutput(`Link: ${proj.link}`);
+          } else {
+            printOutput('Usage: cat [project]');
+          }
+          break;
+        case 'skills':
+          printOutput(skills.length ? skills.join(', ') : 'No skills added yet.');
+          break;
+        case 'socials':
+          if (args.length && socials[args[0]]) {
+            window.open(socials[args[0]], '_blank');
+          } else {
+            Object.entries(socials).forEach(([key, value]) => {
+              printOutput(`${key}: ${value}`);
+            });
+          }
+          break;
+        case 'echo':
+          printOutput(args.join(' '));
+          break;
+        case 'clear':
+          terminal.innerHTML = '';
+          localStorage.removeItem('terminalHTML');
+          break;
+        case 'color':
+          document.body.style.color = args[0] || '#00ff00';
+          break;
+        case 'font':
+          document.body.style.fontFamily = args.join(' ') || 'monospace';
+          break;
+        case 'cd':
+          currentPath = args[0] || '~';
+          promptStr = `bindra@portfolio:${currentPath}$`;
+          break;
+        case 'pwd':
+          printOutput(currentPath);
+          break;
+        case 'exit':
+          printOutput('Exiting terminal...');
+          setTimeout(() => {
+            window.close();
+          }, 1000);
+          break;
+        case "apt-get":
+          if (args[0] === 'install' && args[1]) {
+            if (args[1] === 'coffee') {
+              printOutput('Installing coffee...');
+              setTimeout(() => {
+                printOutput('Installation complete. Enjoy your coffee.');
+              }, 1000);
+            } else {
+              printOutput(`Package ${args[1]} not found.`);
+            }
+          } else {
+            printOutput('Usage: apt-get install [package]');
+          }
+          break;
+        case 'clear-history':
+          history = [];
+          historyIndex = 0;
+          localStorage.removeItem('history');
+          printOutput('History cleared.');
+          break;
+        case 'history':
+          if (history.length === 0) {
+            printOutput('No command history available.');
+          } else {
+            printOutput('Command History:');
+            history.forEach((cmd, index) => {
+              printOutput(`${index + 1}: ${cmd}`);
+            });
+          }
+          break;
+        default:
+          printOutput(`command not found: ${cmd}`);
+      }
+
+      saveState();
+      createPrompt();
+    }
+
+    function bootAnimation() {
+      const saved = localStorage.getItem('terminalHTML');
+      if (saved) {
+        terminal.innerHTML = saved;
+        createPrompt();
+        return;
+      }
+
+      const bootLines = [
+        'Booting terminal shell...',
+        'Loading modules...',
+        'Connecting to Agamjot Singh Bindra portfolio...',
+        'Ready.'
+      ];
+
+      let i = 0;
+      function typeLine() {
+        if (i < bootLines.length) {
+          printOutput(bootLines[i++]);
+          setTimeout(typeLine, 500);
+        } else {
+          printOutput('Agamjot Singh Bindra');
+          createPrompt();
+        }
+      }
+
+      typeLine();
+    }
+
+    bootAnimation();
+  </script>
+</body>
+</html>
