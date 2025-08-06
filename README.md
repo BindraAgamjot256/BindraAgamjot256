@@ -1,7 +1,7 @@
 # Hey there, I’m Agamjot Singh Bindra!  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" alt="Waving Hand">
 
 <div align="center">
-  
+  //todo update this
 </div>
 
 I'm a Student Developer on a quest to conquer Systems Programming, Web Development, and AI/ML. When I'm not debugging code or wrestling with assembly, you'll find me caffeinating to infinity ☕️ and crafting digital dreams.
