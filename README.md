@@ -65,7 +65,7 @@ interface Project {
 const currentProject: Project = {
     name: "zenos",
     status: "In Development", // I am taking a break from PortfoliOS
-    stack: ["Rust", "Assembly"],
+    stack: ["Rust", "Assembly", "C"],
     description: `
         A full-fledged OS, with a working userland, and syscalls(a beast I have never tackled up to now)
     `
@@ -91,9 +91,9 @@ def get_daily_routine():
 
 ## 📈 GitHub Warrior Stats(Because monkeys love dashboards)
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BindraAgamjot256\&show_icons=true\&theme=tokyonight\&hide_border=true)
-![Streak Stats](https://github-readme-streak-stats.herokuapp.com?user=BindraAgamjot256\&theme=tokyonight\&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BindraAgamjot256\&layout=compact\&theme=tokyonight\&hide_border=true)
+![GitHub Stats](https://github-readme-stats-mu-puce-48.vercel.app/api?username=BindraAgamjot256\&show_icons=true\&theme=tokyonight\&hide_border=true)
+![Streak Stats](https://github-readme-streak-stats-tan-six.vercel.app?user=BindraAgamjot256\&theme=tokyonight\&hide_border=true)
+![Top Languages](https://github-readme-stats-mu-puce-48.vercel.app/api/top-langs/?username=BindraAgamjot256\&layout=compact\&theme=tokyonight\&hide_border=true)
 
 ---
 
